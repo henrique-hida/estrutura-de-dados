@@ -1,0 +1,10 @@
+A saída será 3x a última string digitada. 
+
+Isso ocorre por conta de 3 pontos no código: 
+O primeiro é que o array s é estático. O problema disso é que s está passando sempre o 
+mesmo endereço de memória nas funções, já que quando um array é passado como parâmetro, 
+ele na verdade passa um ponteiro. O segundo erro ocorre em gets, que está  sobrescrevendo 
+a string a cada iteração (já que ela é estática). O terceiro ponto é em empilha(s, P). 
+Como o endereço de s não muda, ele é passado toda vez que o loop for ocorre. Portanto, 
+como s é sobrescrito com o último valor digitado, e o mesmo endereço é passado na pilha, 
+o programa retorna a última string 3 vezes, que é o número de vezes que passa pelo for.
