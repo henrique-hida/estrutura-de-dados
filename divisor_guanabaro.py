@@ -29,7 +29,7 @@ def dividir_exercicios(guanabaros: list, num_exercicios: int) -> dict:
 # =====================================================================
 guanabaro_str = "Enzo, Henrique, Thomas"
 guanabaros = [guanabaro.strip() for guanabaro in guanabaro_str.split(',')]
-num_exercicios = 15
+num_exercicios = 6
 
 divisao_de_tarefas = dividir_exercicios(guanabaros, num_exercicios)
 
